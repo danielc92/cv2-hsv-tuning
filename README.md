@@ -1,8 +1,9 @@
-# Scanning images for ideal HSV range using cv2
-
+# cv2 Image Scan
+Tuning HSV values to find objects of particular colour ranges using cv2/python3.
 
 # Before you get started
-Concepts/Software/Programming modules a user may have to read up on before getting started with this project. eg. 'Read about [neural networks](https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6?gi=44b811975215) before getting started.'
+- Understanding of basic python
+- HSV colour space
 
 # Setup
 **How to obtain this repository:**
@@ -10,24 +11,20 @@ Concepts/Software/Programming modules a user may have to read up on before getti
 git clone https//link.to.this.projects.git-repo
 ```
 **Modules/dependencies:**
-- `pandas`
-- `requests`
-- `jupyter`
-- `sklearn`
+- `cv2`
 
 Install the following dependences:
 ```sh
-cd /local/location/of/this/repo
-pip install requirements.txt
+pip install cv2
 ```
 
 # Tests
-- Tests performed on this project. What did you do? Which files were used? Was it successful?
+- Showing original image, mask and result on screen dynamically
+- Moving trackbar sliders to locate object of interest
 
 # Contributors
-- Name of Contributor 1
-- Name of Contributor 2
+- Daniel Corcoran
 
 # Sources
-- Sources for techniques/tutorials used in this project to help newcomers
-- Sources for data used in this project
+- [Code snippet from pysource](https://pysource.com/2018/01/31/object-detection-using-hsv-color-space-opencv-3-4-with-python-3-tutorial-9/)
+- [Object detection using HSV Color space – OpenCV 3.4 with python 3 Tutorial 9](https://www.youtube.com/watch?v=SJCu1d4xakQ)
