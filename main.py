@@ -19,6 +19,9 @@ cv2.createTrackbar("UV", "Trackbars", 255, 255, nothing)
 cv2.createTrackbar("MNSZ", "Trackbars", 0, 500, nothing)
 cv2.createTrackbar("MXSZ", "Trackbars", 500, 500, nothing)
 
+# Set multiplier for MNSZ/MXSZ (min and max threshholds)
+multiplier = 5
+
 
 while True:
     # ignore video capture for now, this script will focus on static images
@@ -33,8 +36,8 @@ while True:
     upper_hue = cv2.getTrackbarPos("UH", "Trackbars")
     upper_saturation = cv2.getTrackbarPos("US", "Trackbars")
     upper_value = cv2.getTrackbarPos("UV", "Trackbars")
-    min_size = cv2.getTrackbarPos("MNSZ", "Trackbars") * 50
-    max_size = cv2.getTrackbarPos("MXSZ", "Trackbars") * 50
+    min_size = cv2.getTrackbarPos("MNSZ", "Trackbars") * multiplier
+    max_size = cv2.getTrackbarPos("MXSZ", "Trackbars") * multiplier
 
     lower_hsv_range = numpy.array([lower_hue, lower_saturation, lower_value])
     upper_hsv_range = numpy.array([upper_hue, upper_saturation, upper_value])
