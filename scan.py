@@ -1,5 +1,5 @@
 import cv2
-import numpy as np
+import numpy
 
 
 def nothing(x):
@@ -36,14 +36,14 @@ while True:
     min_size = cv2.getTrackbarPos("MNSZ", "Trackbars") * 50
     max_size = cv2.getTrackbarPos("MXSZ", "Trackbars") * 50
 
-    lower_hsv_range = np.array([lower_hue, lower_saturation, lower_value])
-    upper_hsv_range = np.array([upper_hue, upper_saturation, upper_value])
+    lower_hsv_range = numpy.array([lower_hue, lower_saturation, lower_value])
+    upper_hsv_range = numpy.array([upper_hue, upper_saturation, upper_value])
     mask = cv2.inRange(hsv, lower_hsv_range, upper_hsv_range)
 
     result = cv2.bitwise_and(frame, frame, mask=mask)
 
     _, contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    contours = [c for c in contours if min_size <= cv2.contourArea(c) <= max_size ]
+    contours = [c for c in contours if min_size <= cv2.contourArea(c) <= max_size]
     cv2.drawContours(frame, contours, -1, (0, 255, 0), 2)
 
     # Show the frame, mask and result
