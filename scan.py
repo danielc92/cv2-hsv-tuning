@@ -20,7 +20,7 @@ cv2.createTrackbar("UV", "Trackbars", 255, 255, nothing)
 while True:
     # ignore video capture for now, this script will focus on static images
     # _, frame = cap.read()
-    frame = cv2.imread('./data/20190108_WGS84_S_Mercator_144_98370_-37_90363_144_98628_-37_90264_20.jpg')
+    frame = cv2.imread('./data/20190108_WGS84_S_Mercator_144_98617_-37_89340_144_98875_-37_89241_20.jpg')
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
     # Store trackbar variables
