@@ -33,12 +33,16 @@ Running:
 # Screenshots
 
 ### Trackbar GUI
+GUI for variable input. Includes HSV upper and lower values as well as a range for size of contours to include in Frame.
 ![](https://github.com/danielc92/cv2-hsv-tuning/blob/master/screenshots/trackbar_screenshot_01.04.2019.png)
 ### Frame
+Shows original image with contour layer overlay.
 ![](https://github.com/danielc92/cv2-hsv-tuning/blob/master/screenshots/frame_screenshot__01.04.2019.png)
 ### Mask
+A filter layer representing the HSV filter calculated from trackbar GUI.
 ![](https://github.com/danielc92/cv2-hsv-tuning/blob/master/screenshots/mask_screenshot_01.04.2019.png)
 ### Result
+Results with colour.
 ![](https://github.com/danielc92/cv2-hsv-tuning/blob/master/screenshots/result_screenshot_01.04.2019.png)
 
 # Sources
