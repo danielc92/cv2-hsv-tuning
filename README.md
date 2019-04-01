@@ -1,5 +1,5 @@
-# cv2 Image Scan
-Tuning HSV values to find objects of particular colour ranges using cv2/python3.
+# CV2 HSV Tuning
+Tuning HSV values in a cv2 GUI to find objects of particular colour ranges within a given image file/video stream. This script was tested using **python 3.6.5**.
 
 # Before you get started
 - Understanding of basic python
