@@ -37,6 +37,10 @@ while True:
 
     result = cv2.bitwise_and(frame, frame, mask=mask)
 
+    _, contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    contours = [c for c in contours if cv2.contourArea(c) > 500]
+    cv2.drawContours(frame, contours, -1, (0, 255, 0), 1)
+
     # Show the frame, mask and result
     cv2.imshow("frame", frame)
     cv2.imshow("mask", mask)
