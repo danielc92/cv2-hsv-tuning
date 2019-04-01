@@ -8,7 +8,7 @@ Tuning HSV values to find objects of particular colour ranges using cv2/python3.
 # Setup
 **How to obtain this repository:**
 ```sh
-git clone https//link.to.this.projects.git-repo
+git clone https://github.com/danielc92/cv2-hsv-tuning.git
 ```
 **Modules/dependencies:**
 - `cv2`
