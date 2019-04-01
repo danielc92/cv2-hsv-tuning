@@ -18,6 +18,11 @@ Install the following dependences:
 pip install cv2
 ```
 
+Running:
+- Set the path in `main.py` to your image
+- Enter `python3 main.py` in terminal
+- Move sliders in trackbar to view resulting contours/mask
+
 # Tests
 - Showing original image, mask and result on screen dynamically
 - Moving trackbar sliders to locate object of interest
